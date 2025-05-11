@@ -1,12 +1,15 @@
 {
   "name": "@davts/xtream",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Xtream API Typescript Client",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "author": "TheoBIET",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "xtream",
     "api",
@@ -15,7 +18,9 @@
   ],
   "scripts": {
     "build": "tsup",
-    "dev": "tsup --watch"
+    "dev": "tsup --watch",
+    "changeset:version": "changeset version",
+    "changeset:publish": "changeset publish"
   },
   "dependencies": {
     "@ts-rest/core": "^3.52.1",

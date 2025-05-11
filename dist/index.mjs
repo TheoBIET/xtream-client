@@ -1,0 +1,2 @@
+import e from'axios';var s=class{constructor(r,a,i){this.url=r;this.username=a;this.password=i;this.api=e.create({baseURL:`${this.url}/player_api.php`,params:{username:this.username,password:this.password}});}api;async get(r){return (await this.api.get("",{params:{action:r}})).data}async login(){return this.get()}};export{s as Xtream};//# sourceMappingURL=index.mjs.map
+//# sourceMappingURL=index.mjs.map

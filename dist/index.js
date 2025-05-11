@@ -1,0 +1,2 @@
+'use strict';var e=require('axios');function _interopDefault(e){return e&&e.__esModule?e:{default:e}}var e__default=/*#__PURE__*/_interopDefault(e);var s=class{constructor(r,a,i){this.url=r;this.username=a;this.password=i;this.api=e__default.default.create({baseURL:`${this.url}/player_api.php`,params:{username:this.username,password:this.password}});}api;async get(r){return (await this.api.get("",{params:{action:r}})).data}async login(){return this.get()}};exports.Xtream=s;//# sourceMappingURL=index.js.map
+//# sourceMappingURL=index.js.map
